@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    background-color: #fff9e2;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.name{
+   text-align: center; 
+   font-size: xxx-large;
+   margin-top: 40px;
+   margin-bottom: 10px;
+}
+.details{
+    text-align: center; 
+    margin-bottom: 15px;
+}
+.details:hover{
+    font-size: x-large;
+    transition: 0.3s;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.intergredients,.Instructions{
+   text-align: center; 
+   font-size: xx-large;
+   margin-bottom: 40px;
+   margin-top: 40px;
+}
+.kimchi,.meat,.base{
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+    margin-bottom: 40px;
+}
+.kimchi li,.meat li,.base li{
+    width: 300px;
+}
+.kimchi h3,.meat h3,.base h3{
+    font-size: x-large;
+}
+.steps{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 30px;
+}
+.steps li{
+    padding-bottom: 15px;
+}
+.cite{
+    text-align: center;
+    margin-bottom: 40px;
+}
