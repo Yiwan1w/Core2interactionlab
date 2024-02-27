@@ -6,10 +6,13 @@
     background-color: antiquewhite;
 }
 .content{
-    margin: 5%;
-    width: 90%;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 2%;
+    letter-spacing: 1px;
+    width: 95%;
     font-family: Optima;
-    font-size: 95px;
+    font-size: 96px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -219,3 +222,4 @@
       top: 0;
       transform: rotate(-135deg);
   }
+
