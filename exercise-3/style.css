@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Optima;
+    background-color: antiquewhite;
+}
+.exercise3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.name{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+.one, .w{
+    display: flex;
+    flex-wrap: wrap;
+    height: 210px;
+    width: 210px;
+}
+.o{
+    width: 30px;
+    height:30px;
+    background-color: rgb(150, 122, 174);
+    display: block;
+}
+.onone{
+    width: 30px;
+    height:30px;
+    background-color: antiquewhite;
+    display: block;
+}
+.name2{
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+.name3{
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
