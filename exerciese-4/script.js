@@ -1,0 +1,9 @@
+let adj=["mindful","little","beautiful","freezing","charming","powerful","selfish","confident","suspicious","cold"]
+let adj1=adj[Math.floor(Math.random()*adj.length)]
+let adj2=adj[Math.floor(Math.random()*adj.length)]
+let adj3=adj[Math.floor(Math.random()*adj.length)]
+let adj4=adj[Math.floor(Math.random()*adj.length)]
+document.getElementById("adj1").innerHTML = adj1
+document.getElementById("adj2").innerHTML = adj2
+document.getElementById("adj3").innerHTML = adj3
+document.getElementById("adj4").innerHTML = adj4
