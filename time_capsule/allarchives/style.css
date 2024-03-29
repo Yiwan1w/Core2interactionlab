@@ -1,0 +1,23 @@
+/* Content design */
+.content { 
+    margin-top:88px; 
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 500px;
+    font-size:22px; 
+} 
+.firstrow, .secondrow{
+    display: flex;
+    flex-flow: row;
+}
+.item{
+    filter:grayscale(100%);
+    width: 100%;
+}
+.item img{
+    
+}
+.item:hover{
+    filter: grayscale(0%);
+    transition: 2.5s;
+}

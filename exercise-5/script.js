@@ -1,0 +1,126 @@
+let circle1=document.getElementById('circle1');
+let circle2=document.getElementById('circle2');
+let circle3=document.getElementById('circle3');
+let circle4=document.getElementById('circle4');
+let circle5=document.getElementById('circle5');
+let circle6=document.getElementById('circle6');
+let circle7=document.getElementById('circle7');
+let circle8=document.getElementById('circle8');
+let circle9=document.getElementById('circle9');
+let circle10=document.getElementById('circle10');
+let circle11=document.getElementById('circle11');
+let circle12=document.getElementById('circle12');
+let circle13=document.getElementById('circle13');
+let circle14=document.getElementById('circle14');
+let circle15=document.getElementById('circle15');
+let circle16=document.getElementById('circle116');
+
+let colors=['#98AFC7','$87AFC7','#2B547E','#728FCW'];
+
+let randomColor1 = Math.floor(Math.random() * colors.length);
+let randomColor2 = Math.floor(Math.random() * colors.length);
+let randomColor3 = Math.floor(Math.random() * colors.length);
+let randomColor4 = Math.floor(Math.random() * colors.length);
+let randomColor5 = Math.floor(Math.random() * colors.length);
+let randomColor6 = Math.floor(Math.random() * colors.length);
+let randomColor7 = Math.floor(Math.random() * colors.length);
+let randomColor8 = Math.floor(Math.random() * colors.length);
+let randomColor9 = Math.floor(Math.random() * colors.length);
+let randomColor10 = Math.floor(Math.random() * colors.length);
+let randomColor11 = Math.floor(Math.random() * colors.length);
+let randomColor12 = Math.floor(Math.random() * colors.length);
+let randomColor13 = Math.floor(Math.random() * colors.length);
+let randomColor14 = Math.floor(Math.random() * colors.length);
+let randomColor15 = Math.floor(Math.random() * colors.length);
+let randomColor16 = Math.floor(Math.random() * colors.length);
+
+circle1.style.backgroundColor = colors[randomColor1];
+circle2.style.backgroundColor = colors[randomColor2];
+circle3.style.backgroundColor = colors[randomColor3];
+circle4.style.backgroundColor = colors[randomColor4];
+circle5.style.backgroundColor = colors[randomColor5];
+circle6.style.backgroundColor = colors[randomColor6];
+circle7.style.backgroundColor = colors[randomColor7];
+circle8.style.backgroundColor = colors[randomColor8];
+circle9.style.backgroundColor = colors[randomColor9];
+circle10.style.backgroundColor = colors[randomColor10];
+circle11.style.backgroundColor = colors[randomColor11];
+circle12.style.backgroundColor = colors[randomColor12];
+circle13.style.backgroundColor = colors[randomColor13];
+circle14.style.backgroundColor = colors[randomColor14];
+circle15.style.backgroundColor = colors[randomColor15];
+circle16.style.backgroundColor = colors[randomColor16];
+
+
+let borderRadius=['0px 0 0 100px','100px 0 0 0px','0px 100px 0 0px','0px 0 100px 0px'];
+
+let randomR1 = Math.floor(Math.random() * borderRadius.length);
+let randomR2 = Math.floor(Math.random() * borderRadius.length);
+let randomR3 = Math.floor(Math.random() * borderRadius.length);
+let randomR4 = Math.floor(Math.random() * borderRadius.length);
+let randomR5 = Math.floor(Math.random() * borderRadius.length);
+let randomR6 = Math.floor(Math.random() * borderRadius.length);
+let randomR7 = Math.floor(Math.random() * borderRadius.length);
+let randomR8 = Math.floor(Math.random() * borderRadius.length);
+let randomR9 = Math.floor(Math.random() * borderRadius.length);
+let randomR10 = Math.floor(Math.random() * borderRadius.length);
+let randomR11 = Math.floor(Math.random() * borderRadius.length);
+let randomR12 = Math.floor(Math.random() * borderRadius.length);
+let randomR13 = Math.floor(Math.random() * borderRadius.length);
+let randomR14 = Math.floor(Math.random() * borderRadius.length);
+let randomR15 = Math.floor(Math.random() * borderRadius.length);
+let randomR16 = Math.floor(Math.random() * borderRadius.length);
+
+circle1.style.borderRadius = borderRadius[randomR1];
+circle2.style.borderRadius = borderRadius[randomR2];
+circle3.style.borderRadius = borderRadius[randomR3];
+circle4.style.borderRadius = borderRadius[randomR4];
+circle5.style.borderRadius = borderRadius[randomR5];
+circle6.style.borderRadius = borderRadius[randomR6];
+circle7.style.borderRadius = borderRadius[randomR7];
+circle8.style.borderRadius = borderRadius[randomR8];
+circle9.style.borderRadius = borderRadius[randomR9];
+circle10.style.borderRadius = borderRadius[randomR10];
+circle11.style.borderRadius = borderRadius[randomR11];
+circle12.style.borderRadius = borderRadius[randomR12];
+circle13.style.borderRadius = borderRadius[randomR13];
+circle14.style.borderRadius = borderRadius[randomR14];
+circle15.style.borderRadius = borderRadius[randomR15];
+circle16.style.borderRadius = borderRadius[randomR16];
+
+
+let rotate=['rotate(0deg)','rotate(90deg)','rotate(180deg)','rotate(270deg)'];
+
+let randomrotate1 = Math.floor(Math.random() * rotate.length);
+let randomrotate2 = Math.floor(Math.random() * rotate.length);
+let randomrotate3 = Math.floor(Math.random() * rotate.length);
+let randomrotate4 = Math.floor(Math.random() * rotate.length);
+let randomrotate5 = Math.floor(Math.random() * rotate.length);
+let randomrotate6 = Math.floor(Math.random() * rotate.length);
+let randomrotate7 = Math.floor(Math.random() * rotate.length);
+let randomrotate8 = Math.floor(Math.random() * rotate.length);
+let randomrotate9 = Math.floor(Math.random() * rotate.length);
+let randomrotate10 = Math.floor(Math.random() * rotate.length);
+let randomrotate11 = Math.floor(Math.random() * rotate.length);
+let randomrotate12 = Math.floor(Math.random() * rotate.length);
+let randomrotate13 = Math.floor(Math.random() * rotate.length);
+let randomrotate14 = Math.floor(Math.random() * rotate.length);
+let randomrotate15 = Math.floor(Math.random() * rotate.length);
+let randomrotate16 = Math.floor(Math.random() * rotate.length);
+
+circle1.style.rotate = rotate[randomrotate1];
+circle2.style.rotate = rotate[randomrotate2];
+circle3.style.rotate = rotate[randomrotate3];
+circle4.style.rotate = rotate[randomrotate4];
+circle5.style.rotate = rotate[randomrotate5];
+circle6.style.rotate = rotate[randomrotate6];
+circle7.style.rotate = rotate[randomrotate7];
+circle8.style.rotate = rotate[randomrotate8];
+circle9.style.rotate = rotate[randomrotate9];
+circle10.style.rotate = rotate[randomrotate10];
+circle11.style.rotate = rotate[randomrotate11];
+circle12.style.rotate = rotate[randomrotate12];
+circle13.style.rotate = rotate[randomrotate13];
+circle14.style.rotate = rotate[randomrotate14];
+circle15.style.rotate = rotate[randomrotate15];
+circle16.style.rotate = rotate[randomrotate16];
