@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Capsule</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navlist of header -->
@@ -15,25 +18,11 @@
       
         <div id="navlist-right">  
             <a href="#about">All Archives</a> 
-            <a href="#about">About</a> 
         </div> 
     </div> 
   
-    <!-- insta story 
-    <div data-slide="slide" class="slide">
-        <div class="slide-items">
-            <img src="assets/card_city1.jpg" alt="001">
-            <img src="assets/card_city2.jpg" alt="002">
-            <img src="assets/card_desert1.jpg" alt="003">
-            <img src="assets/card_inland1.jpg" alt="004">
-        </div>
-        <nav class="slide-nav">
-            <div class="slide-thumbs"></div>
-            <button class="slide-prev">Previous</button>
-            <button class="slide-next">Next</button>
-        </nav>
-    </div>
--->
+   
+
     <!-- Page Content
     <div class="content"> 
         <div class="items">
@@ -54,10 +43,71 @@
         </div>
     </div>  -->
 
-    <div firstpart>
-        <h1>Words, music, a play or a certain item may carry the memory of a certain period.</h1>
-    </div>
+    <section class="intropart">
+        <div class="lefttext">
+            <div><span id="factDisplay"></span> may carry the memory of a certain period.</div>
+            <div class="introwords"><span id="changeText"></span> may carry the memory of a certain period.</div>
+        </div>
 
+        <!-- insta story -->
+    <div data-slide="slide" class="slide">
+        <div class="slide-items">
+            <img src="assets/Case Closed.png" alt="001">
+            <img src="assets/teleb.jpeg" alt="002">
+            <img src="assets/kongfupanda.jpg" alt="003">
+            <img src="assets/heimaojingzhang.jpeg" alt="004">
+        </div>
+        <nav class="slide-nav">
+            <div class="slide-thumbs"></div>
+            <button class="slide-prev">Previous</button>
+            <button class="slide-next">Next</button>
+        </nav>
+    </div>
+    </section>
+    
+    <!-- Time -->
+    <div class="time">
+   <div class="changetime" id="changetime"></div>
+   </div>  
+   <div class="time">
+    <p class="welcome">Welcome to 00s.</p>
+   </div>
+   <div class="video">
+    <video class="piantou" src="assets/hahashaoer.mp4" autoplay></video>
+   </div>
+
+   <div class="allchannels">
+    <div class="time2"><p class="channel">Childhood TV Channels</p></div>
+    <div class="channels">
+        <div class="cctv">
+            <p class="list">01</p>
+            <p class="name">CCTV-14</p>
+            <p class="chiname">央视少儿频道</p>
+            <p class="startime">Starting from 2003.12.10</p>
+        </div>
+        <div class="">
+            <p class="list">02</p>
+            <p class="name">CCTV-14</p>
+            <p class="chiname">央视少儿频道</p>
+            <p class="startime">Starting from 2003.12.10</p>
+        </div>
+        <div>
+            <p class="list">03</p>
+            <p class="name">CCTV-14</p>
+            <p class="chiname">央视少儿频道</p>
+            <p class="startime">Starting from 2003.12.10</p>
+        </div>
+        <div>
+            <p class="list">04</p>
+            <p class="name">CCTV-14</p>
+            <p class="chiname">央视少儿频道</p>
+            <p class="startime">Starting from 2003.12.10</p>
+        </div>
+    </div>
+   </div>
+
+
+<!-- images set
     <div class="row">
         <div class="column">
             <img src="assets/Aikatsu222.jpg" alt="">
@@ -90,7 +140,8 @@
         <div class="column">
             <img src="assets/dora.jpg" alt="">
             <img src="assets/jiayouernv.jpeg" alt="">
-            <img src="assets/moka.jpeg" alt="">
+            <img id="img1" src="assets/moka.jpeg" alt="">
+            <audio id="au1" src="assets/百变小樱.m4a"></audio>
             <img src="assets/huayunbaobao.jpeg" alt="">
             <img src="" alt="">
         </div>
@@ -109,7 +160,87 @@
             <img src="" alt="">
         </div>
        
+    </div> -->
+
+<!-- archives -->
+    <div class="archives">
+    <div class="time"><p class="TVarchive">Exploring the TV Archives</p></div>
+    <div class="archivelist">
+        <div>
+            <img id="cartoon1" class="cartoon" src="assets/xindatou.jpeg" alt="">
+            <audio id="audio1" src="assets/大头儿子小头爸爸.m4a"></audio>
+            <p class="cartooname">大头儿子小头爸爸</p>
+        </div>
+        <div>
+            <img id="cartoon2" class="cartoon" src="assets/米奇妙妙屋.jpeg" alt="">
+            <audio id="audio2" src="assets/米奇妙妙屋.m4a"></audio>
+            <p class="cartooname">米奇妙妙屋</p>
+            <script src="script2.js"></script>
+        </div>
+        <div>
+            <img id="cartoon3" class="cartoon" src="assets/moka.jpeg" alt="">
+            <audio id="audio3" src="assets/百变小樱.m4a"></audio>
+            <p class="cartooname">百变小樱</p>
+            <script src="script3.js"></script>
+        </div>
+        <div>
+            <img id="cartoon4" class="cartoon" src="assets/jiayouernv.jpeg" alt="">
+            <audio id="audio4" src="assets/家有儿女.m4a"></audio>
+            <p class="cartooname">家有儿女</p>
+            <script src="script4.js"></script>
+        </div>
+        <div>
+            <img id="cartoon5" class="cartoon" src="assets/baobao.png" alt="">
+            <audio id="audio5" src="assets/海绵宝宝.m4a"></audio>
+            <p class="cartooname">海绵宝宝</p>
+            <script src="script5.js"></script>
+        </div>
+        <div>
+            <img id="cartoon6" class="cartoon" src="assets/xiyangyang.jpg" alt="">
+            <audio id="audio6" src="assets/喜羊羊与灰太狼.m4a"></audio>
+            <p class="cartooname">喜羊羊与灰太狼</p>
+            <script src="script6.js"></script>
+        </div>
+        <div>
+            <img id="cartoon7" class="cartoon" src="assets/Aikatsu222.jpg" alt="">
+            <audio id="audio7" src="assets/偶像活动.m4a"></audio>
+            <p class="cartooname">偶像活动</p>
+            <script src="script7.js"></script>
+        </div>
+        <div>
+            <img id="cartoon8" class="cartoon" src="assets/zhuzhuxia.jpg" alt="">
+            <audio id="audio8" src="assets/猪猪侠.m4a"></audio>
+            <p class="cartooname">猪猪侠</p>
+            <script src="script8.js"></script>
+        </div>
+        <div>
+            <img id="cartoon9" class="cartoon" src="assets/WechatIMG187.jpg" alt="">
+            <audio id="audio9" src="assets/多啦A梦.m4a"></audio>
+            <p class="cartooname">哆啦a梦</p>
+            <script src="script9.js"></script>
+        </div>
+        <div>
+            <img id="cartoon10" class="cartoon" src="assets/kaixinchaoren.jpg" alt="">
+            <audio id="audio10" src="assets/开心超人.m4a"></audio>
+            <p class="cartooname">开心超人</p>
+            <script src="script10.js"></script>
+        </div>
     </div>
+    </div>
+
+<!-- click -->
+    <div class="click">
+        <a class="clicklink" href=""><p class="clickto">Click to see all archives</p></a>
+    </div>
+    <div class="click">
+        <a class="clicklink" href=""><p class="clickto">Go back to the top</p></a>
+    </div>
+    <!-- first part 
+    <div firstpart>
+        <h1><span class="changetext" id="changetext"></span> may carry the memory of a certain period.</h1>
+    </div>-->
+   
+
     <script src="script.js"></script>
 </body>
 </html>

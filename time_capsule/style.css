@@ -1,6 +1,6 @@
 * { 
     box-sizing: border-box; 
-    font-family: Optima;
+    font-family: Silkscreen;
 } 
 
 body { 
@@ -10,7 +10,6 @@ body {
 /* Navlist designing */
 #navlist { 
     overflow: hidden; 
-    background-color: black; 
     padding: 50vh 20px; 
     transition: 0.4s; 
     position: fixed; 
@@ -20,8 +19,8 @@ body {
 } 
 
 #navlist a { 
+    color: black;
     float: left; 
-    color: black; 
     text-align: center; 
     padding: 12px; 
     text-decoration: none; 
@@ -61,16 +60,18 @@ img {
     height: 48rem;
     box-shadow: var(--slide-width);
     display: grid;
-    margin: 20px auto;
+    margin: 10px;
     max-width: var(--slide-width);
     position: relative;
 }
 @media screen  and (min-width: 768px) {
     .slide {
-        width: 98%;
+        margin-top: 20px;
+        width: 50%;
         box-shadow: var(--slide-width);
         display: grid;
         max-width: var(--slide-width);
+        z-index: -2;
     }
     #navlist #logo { 
         font-size: 50px; 
@@ -184,3 +185,221 @@ img {
       max-width: 100%;
     }
   }
+
+/*first part*/
+.intropart{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100vh;
+}
+.introwords{
+    font-weight: bold;
+    font-size: xx-large;
+    transition: 0.4s;
+}
+
+@media screen  and (min-width: 768px) {
+    .intropart{
+        margin-top: 200px;
+        display: flex;
+        height: 100vh;
+    }
+    .introwords{
+        padding-right: 20px;
+        font-weight: bold;
+        font-size: 60px;
+        transition: 0.4s;
+    }
+    .lefttext{
+        margin-top: 18%;
+        width: 50%;
+    }
+}
+
+.time{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.changetime{
+    color: white;
+    font-size: x-large;
+}
+.welcome{
+    color: white;
+    font-size: x-large;
+}
+.video{
+    filter: blur(5%);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.piantou{
+    width: 90%;
+    margin-bottom: 20px;
+    filter: blur(10px) grayscale(80%);
+}
+.piantou:hover{
+    filter: blur(0) grayscale(0);
+    transition: 2.5s;
+}
+@media screen  and (min-width: 768px) {
+    .changetime{
+        color: white;
+        font-size: xx-large;
+        margin-top: 40px;
+    }
+    .welcome{
+        color: white;
+        font-size: xxx-large;
+        font-weight: bold;
+        margin-bottom: 60px;
+    }
+
+    .time{
+        padding-top: 10px;
+        background-color: black;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .time2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .piantou{
+        width: 60%;
+        margin-bottom: 80px;
+        margin-top: 10px;
+    }
+}
+.channel{
+    font-size: x-large;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.channels{
+    font-size: large;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.chiname{
+    font-size: smaller;
+}
+.startime{
+    font-size: medium;
+}
+@media screen  and (min-width: 768px) {
+    .startime{
+        font-size: large;
+    }
+    .chiname{
+        margin-bottom: -17px;
+        font-size: medium;
+    }
+    .channel{
+        padding-top: 30px;
+        font-size: xx-large;
+        font-weight: bold;
+        margin-bottom: -5px;
+    }
+    .channels{
+        display: flex;
+        justify-content: space-between;
+    }
+    .allchannels{
+        height: 35vh;
+    }
+    .name{
+        margin-bottom: -15px;
+        font-size: x-large;
+    }
+    .list{
+        font-size: 35px;
+        margin-bottom: -15px;
+    }
+    .click{
+        height: 5%;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+}
+.click{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.click{
+    font-size: large;
+    font-weight: bold;
+}
+.clicklink{
+    text-decoration: none;
+    color: black;
+}
+.clicklink:hover{
+    color: white;
+    background-color: black;
+    transition: 0.4s; 
+}
+
+.archives{
+    background-color: black;
+}
+.TVarchive{
+    color: white;
+    font-size: x-large;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.archivelist img{
+    margin-right: 20px;
+    filter: blur(10px) grayscale(80%);
+}
+   .archivelist img:hover{
+    filter: blur(0) grayscale(0);
+    transition: 2.5s;
+}
+@media screen  and (min-width: 768px) {
+    .click{
+        margin-top: 20px;
+        font-size: x-large;
+        font-weight: bold;
+    }
+ .archivelist{
+     align-items: center;
+     display: flex;
+     margin-left: 20px;
+     margin-right: 20px;
+     margin-top: 40px;
+     overflow: auto;
+    }
+.archivelist img{
+     object-fit: contain;
+     width: 500px;
+     margin-right: 20px;
+     filter: blur(10px) grayscale(80%);
+ }
+.archivelist img:hover{
+     filter: blur(0) grayscale(0);
+     transition: 2.5s;
+ }
+ .TVarchive{
+     color: white;
+     font-size: 40px;
+     font-weight: bold;
+     margin-top: 70px;
+ }
+ .archives{
+     background-color: black;
+     margin-top:30px;
+ }
+ }
