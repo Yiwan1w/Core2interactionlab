@@ -42,3 +42,26 @@
       max-width: 100%;
     }
   }
+
+.click{
+    margin-top: 5px;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.click{
+  font-size: large;
+  font-weight: bold;
+}
+.clicklink{
+  text-decoration: none;
+  color: black;
+}
+.clicklink:hover{
+  color: white;
+  background-color: black;
+  transition: 0.4s; 
+}
