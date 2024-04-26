@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Matter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="bodypart">
+
+    <div class="leftpart">
+    <canvas id="canvas" class="canvas" width="400" height="400" style="background-color:transparent"></canvas>
+    <div class="quicknotes" id="quicknotes">
+        <p class="Note">Quick Notes</p>
+
+        <div class="wrapper">
+			<div class="main">
+					<input type="text" class="fruitInput" placeholder="Take Something Down" id="placeholder">
+					<input id="changebutton" type="submit" class="addFruitButton" value="Add">
+        <div class="fruit-container">
+				<ul id="fruitList" class="fruitList">
+				</ul>
+          </div>
+				
+			</div>
+		</div>
+
+
+  <button id="changedelete" class="removeFruits">Refresh</button>
+
+    </div>
+    <div class="calendar-container">
+        <header class="calendar-header">
+            <p class="calendar-current-date"></p>
+            <div class="calendar-navigation">
+                <span id="calendar-prev"
+                      class="material-symbols-rounded">
+                    <
+                </span>
+                <span id="calendar-next"
+                      class="material-symbols-rounded">
+                    >
+                </span>
+            </div>
+        </header>
+ 
+        <div class="calendar-body">
+            <ul class="calendar-weekdays">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+            </ul>
+            <ul class="calendar-dates" id="calendar-dates"></ul>
+        </div>
+    </div>
+    </div>
+
+    <div class="rightpart">
+    <div class="matters">
+        <div class="matter" id="matter">
+            <div>Back to Home: <span id="replaceMe">365</span> Days Left</div>
+        </div>
+        <div class="matter">
+            <div>Mother's Day: <span id="replaceMe2">365</span> Days Left</div>
+        </div>
+        <div class="matter">
+            <div>My Mum's Birthday: <span id="replaceMe3">365</span> Days Left</div>
+        </div>
+        <div class="matter">
+            <div>Junior Starting & Back to NY: <span id="replaceMe4">365</span> Days Left</div>
+        </div>
+    </div>
+    <div class="matters">
+        <div class="matter">
+            <div>Back to Home: <span id="replaceMe">365</span> Days Left</div>
+        </div>
+        <div class="matter">
+            <div>Mother's Day: <span id="replaceMe2">365</span> Days Left</div>
+        </div>
+        <div class="matter">
+            <div>My Mum's Birthday: <span id="replaceMe3">365</span> Days Left</div>
+        </div>
+        <div class="matter">
+            <div>Junior Starting & Back to NY: <span id="replaceMe4">365</span> Days Left</div>
+        </div>
+    </div>
+    </div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>

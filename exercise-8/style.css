@@ -1,0 +1,35 @@
+@font-face {
+    font-family:MyWebFont1;
+    src: url(ABCConnect-Phillips-Trial.woff2);
+}
+@font-face {
+    font-family:MyWebFont2;
+    src: url(ABCConnect-Torx-Trial.woff2);
+}
+@font-face {
+    font-family:MyWebFont3;
+    src: url(ABCConnect-Hex-Trial.woff2);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.hahaha{
+    font-size: 300px;
+    position: absolute;
+}
+.img{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+#hour, #minutes, #seconds {
+    position: absolute;
+    right: 0%;
+    width: 160px;
+    height: 160px;
+    mix-blend-mode: hard-light;
+  }
+
+
