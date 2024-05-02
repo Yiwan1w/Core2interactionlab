@@ -11,37 +11,42 @@ if (t < 9) {
     quickNotes.style.borderColor = "white";
     changeButton.style.color="white";
     changeDelete.style.color="white";
-    
+    matterStyle.style.borderColor="white";
 } else if (t < 11) {
-    document.body.style.backgroundColor="#FEFAD4";
-    document.body.style.color="#765D96";
-    quickNotes.style.borderColor = "#765D96";
-    changeButton.style.color="#765D96";
-    changeDelete.style.color="#765D96";
+    document.body.style.backgroundColor="#F99471";
+    document.body.style.color="white";
+    quickNotes.style.borderColor = "white";
+    changeButton.style.color="white";
+    changeDelete.style.color="white";
+    matterStyle.style.borderColor="white";
 } else if (t < 14){
     document.body.style.backgroundColor="#FCD0BA";
     document.body.style.color="white";
     quickNotes.style.borderColor = "white";
     changeButton.style.color="white";
     changeDelete.style.color="white"; 
+    matterStyle.style.borderColor="white";
 } else if (t < 17){
     document.body.style.backgroundColor="#F0B7A7";
     document.body.style.color="white";
     quickNotes.style.borderColor = "white";
     changeButton.style.color="white";
     changeDelete.style.color="white"; 
+    matterStyle.style.borderColor="white";
 } else if (t < 19){
     document.body.style.backgroundColor="#AB6C82";
     document.body.style.color="white";
     quickNotes.style.borderColor = "white";
     changeButton.style.color="white";
     changeDelete.style.color="white";
+    matterStyle.style.borderColor="white";
 } else if (t < 22){
     document.body.style.backgroundColor="#685d79";
     document.body.style.color="white";
     quickNotes.style.borderColor = "white";
     changeButton.style.color="white";
     changeDelete.style.color="white";
+    matterStyle.style.borderColor="white";
 } else {
     document.body.style.backgroundColor="#475C7A";;
     document.body.style.color="white";
@@ -137,7 +142,7 @@ function drawClock() {
     if (t < 9) {
     ctx.fillStyle = '#8FB9A8';
 } else if (t < 11) {
-    ctx.fillStyle = '#FEFAD4';
+    ctx.fillStyle = '#F99471';
 } else if (t < 14) {
     ctx.fillStyle = '#FCD0BA';
 } else if (t < 17) {
@@ -212,7 +217,9 @@ setInterval(drawClock, 1000);
 
 
 // Countdown starts here
-let home = new Date("May 12, 2024 00:00:00");
+
+let dateSelector = document.getElementById("dateSelector");
+let home = new Date(Date.replace.dateSelector);
 
 // GET TODAY'S DATE
 let today = new Date();

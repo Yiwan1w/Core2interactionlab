@@ -7,29 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="topbar">
+        <a class="JJJ" id="JJJ" href="">J</a>/<a class="PPP" href="">P</a>
+    </div>
+
     <section class="bodypart">
 
-    <div class="leftpart">
+    <div class="leftpart" id="leftpart">
     <canvas id="canvas" class="canvas" width="400" height="400" style="background-color:transparent"></canvas>
-    <div class="quicknotes" id="quicknotes">
-        <p class="Note">Quick Notes</p>
-
-        <div class="wrapper">
-			<div class="main">
-					<input type="text" class="fruitInput" placeholder="Take Something Down" id="placeholder">
-					<input id="changebutton" type="submit" class="addFruitButton" value="Add">
-        <div class="fruit-container">
-				<ul id="fruitList" class="fruitList">
-				</ul>
-          </div>
-				
-			</div>
-		</div>
-
-
-  <button id="changedelete" class="removeFruits">Refresh</button>
-
-    </div>
+    
     <div class="calendar-container">
         <header class="calendar-header">
             <p class="calendar-current-date"></p>
@@ -59,38 +45,84 @@
         </div>
     </div>
     </div>
-
+    
+   
     <div class="rightpart">
     <div class="matters">
         <div class="matter" id="matter">
-            <div>Back to Home: <span id="replaceMe">365</span> Days Left</div>
+            <div class="importantdate">Back to Home:</div>
+            <div class="daysleft">
+                <span id="replaceMe">365</span>
+            </div>
+            <div class="targetingdate"> 2024.05.12</div>
         </div>
-        <div class="matter">
-            <div>Mother's Day: <span id="replaceMe2">365</span> Days Left</div>
+        <div class="matter" id="matter2">
+            <div class="importantdate">Mother's Day:</div>
+            <div class="daysleft"><span id="replaceMe2">365</span></div>
+            <div class="targetingdate"> 2024.05.12</div>
         </div>
-        <div class="matter">
-            <div>My Mum's Birthday: <span id="replaceMe3">365</span> Days Left</div>
         </div>
-        <div class="matter">
-            <div>Junior Starting & Back to NY: <span id="replaceMe4">365</span> Days Left</div>
+        <div class="matters">
+            <div class="matter" id="matter3">
+                <div class="importantdate">My Mum's Birthday:</div>
+                <div class="daysleft"><span id="replaceMe3">365</span></div>
+                <div class="targetingdate"> 2024.08.10</div>
+            </div>
+            <div class="matter" id="matter4">
+                <div class="importantdate">Junior Starting & Back to NY:</div>
+                <div class="daysleft"> <span id="replaceMe4">365</span></div>
+                <div class="targetingdate"> 2024.08.26</div>
         </div>
     </div>
     <div class="matters">
-        <div class="matter">
-            <div>Back to Home: <span id="replaceMe">365</span> Days Left</div>
+        <div class="matter" id="matter5">
+            <div class="importantdate">New Year:</div>
+            <div class="daysleft"><span id="replaceMe5">365</span></div>
+            <div class="targetingdate"> 2025.01.01</div>
         </div>
-        <div class="matter">
-            <div>Mother's Day: <span id="replaceMe2">365</span> Days Left</div>
+        <div class="matter" id="matter6">
+            <div class="importantdate">Calculate my day:</div>
+            <div class="daysleft">
+                <input type="date" id="dateSelector" class="dateSelector">
+                <span id="replaceMe" class="replaceMe">000</span>
+            </div>
+           
+    </div>
+</div>
+    
+ 
+    </div>
+
+    <div class="midpart" id="midpart">
+        <div class="quicknotes" id="quicknotes">
+            <p class="Note">Quick Notes</p>
+    
+            <div class="wrapper">
+                <div class="main">
+                        <input type="text" class="fruitInput" placeholder="Take Something Down" id="placeholder">
+                        <input id="changebutton" type="submit" class="addFruitButton" value="Add">
+            <div class="fruit-container">
+                    <ul id="fruitList" class="fruitList">
+                    </ul>
+              </div>
+                    
+                </div>
+            </div>
+      <button id="changedelete" class="removeFruits">Refresh</button>
         </div>
-        <div class="matter">
-            <div>My Mum's Birthday: <span id="replaceMe3">365</span> Days Left</div>
-        </div>
-        <div class="matter">
-            <div>Junior Starting & Back to NY: <span id="replaceMe4">365</span> Days Left</div>
-        </div>
+
+
+<div class="todolist">
+    <div class="container">
+        <h1 class="todotitle">To Do List</h1>
+        <input type="text" class="taskInput" id="taskInput" placeholder="Add new task">
+        <button onclick="addTask()" class="addclassbtn">Add</button>
+        <ul id="taskList" class="tasklist">
+
+        </ul>
     </div>
     </div>
 </section>
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>
