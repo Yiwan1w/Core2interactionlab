@@ -12,10 +12,79 @@
     padding: 0;
     font-family: MyWebFont;
 }
+.infor{
+    width: 20%;
+    padding: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.32);
+    border-radius: 20px;
+}
+.selfintro{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.jvalue{
+    font-size: 25px;
+    font-feature-settings: "ss16";
+}
+.time{
+    display: flex;
+}
+.timeslot{
+    font-family: MyWebFont;
+    font-feature-settings: "ss16";
+}
+.EarlyMorning{
+    margin-top: 6px;
+    margin-left: 20px;
+    background-color: #8FB9A8;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+.nine,.eleven,.fourteen,.svt,.nineteen,.midnight{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 6px;
+}
+.nine{
+    background-color: #ffe7c2;
+}
+.eleven{
+    background-color: #FCD0BA;
+}
+.fourteen{
+    background-color: #F0B7A7;
+}
+.svt{
+    background-color: #AB6C82;
+}
+.nineteen{
+    background-color: #685d79;
+}
+.midnight{
+    margin-left: 20px;
+    background-color: #475C7A;
+}
 .topbar{
     overflow: hidden;
     height: 60px;
     font-size: xx-large;
+}
+.III{
+    text-decoration: none;
+    font-family: MyWebFontBlack;
+    font-feature-settings: "ss16";
+    font-size: xxx-large;
+    border: none;
+    background-color: white;
+    float: right;
 }
 .topbar a{
     text-decoration: none;
@@ -127,10 +196,10 @@
     margin-right: 10px;
 }
 .importantdate{
-    margin-top: 12px;
+    margin-top: 20px;
     text-align: center;
     font-family: myWebFontBlack;
-    font-size: 30px ;
+    font-size: 28px ;
 }
 .daysleft{
     margin-top: 10px;
@@ -139,14 +208,20 @@
     align-items: center;
     flex-direction: column;
     font-feature-settings: "ss16";
-    font-size: 44px;
+    font-size: 80px;
 }
-.targetingdate{
+.targetingdate,.dateSelector{
     position: absolute;
-    bottom: 0;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%, -50%);
     font-family: myWebFontBlack;
+    font-size: 16px;
 }
-
+.dateSelector{
+    font-family: myWebFontBlack;
+    font-size: 14px;
+}
 .calendar-container {
     margin-top: 30px;
     margin-bottom: 28px;

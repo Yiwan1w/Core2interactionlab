@@ -10,6 +10,7 @@ let matterStyle6 = document.getElementById('matter6');
 let leftPart = document.getElementById('leftpart');
 let midPart = document.getElementById('midpart');
 let JJJ =  document.getElementById('JJJ');
+let III = document.getElementById('III');
 //////matter border color 
 // background changing hourly 
 var t = new Date().getHours();
@@ -17,6 +18,7 @@ if (t < 9) {
     ////document.body.style.backgroundColor="#8FB9A8";
     ////document.body.style.color="white";
     JJJ.style.color="#8FB9A8";
+    III.style.color="#8FB9A8";
     midPart.style.backgroundColor="#8FB9A8";
     leftPart.style.backgroundColor="#8FB9A8";
     leftPart.style.color="white";
@@ -31,33 +33,71 @@ if (t < 9) {
     matterStyle6.style.borderColor="#8FB9A8";
     
 } else if (t < 11) {
-    document.body.style.backgroundColor="#FEFAD4";
-    document.body.style.color="#765D96";
-    quickNotes.style.borderColor = "#765D96";
-    changeButton.style.color="#765D96";
-    changeDelete.style.color="#765D96";
-} else if (t < 14){
-    document.body.style.backgroundColor="#FCD0BA";
-    document.body.style.color="white";
-    quickNotes.style.borderColor = "white";
-    changeButton.style.color="white";
-    changeDelete.style.color="white"; 
-} else if (t < 17){
-    document.body.style.backgroundColor="#F0B7A7";
-    document.body.style.color="white";
-    quickNotes.style.borderColor = "white";
-    changeButton.style.color="white";
-    changeDelete.style.color="white"; 
-} else if (t < 19){
-    document.body.style.backgroundColor="#AB6C82";
-    document.body.style.color="white";
+    JJJ.style.color="#ffe7c2";
+    III.style.color="#ffe7c2";
+    midPart.style.backgroundColor="#ffe7c2";
+    leftPart.style.backgroundColor="#ffe7c2";
+    leftPart.style.color="white";
     quickNotes.style.borderColor = "white";
     changeButton.style.color="white";
     changeDelete.style.color="white";
+    matterStyle.style.borderColor="#ffe7c2";
+    matterStyle2.style.borderColor="#ffe7c2";
+    matterStyle3.style.borderColor="#ffe7c2";
+    matterStyle4.style.borderColor="#ffe7c2";
+    matterStyle5.style.borderColor="#ffe7c2";
+    matterStyle6.style.borderColor="#ffe7c2";
+} else if (t < 14){
+   //// III.style.color="#FCD0BA";
+   JJJ.style.color="#FCD0BA";
+   III.style.color="#FCD0BA";
+   midPart.style.backgroundColor="#FCD0BA";
+   leftPart.style.backgroundColor="#FCD0BA";
+   leftPart.style.color="white";
+   quickNotes.style.borderColor = "white";
+   changeButton.style.color="white";
+   changeDelete.style.color="white";
+   matterStyle.style.borderColor="#FCD0BA";
+   matterStyle2.style.borderColor="#FCD0BA";
+   matterStyle3.style.borderColor="#FCD0BA";
+   matterStyle4.style.borderColor="#FCD0BA";
+   matterStyle5.style.borderColor="#FCD0BA";
+   matterStyle6.style.borderColor="#FCD0BA";
+} else if (t < 17){
+    ///document.body.style.backgroundColor="#F0B7A7";
+    JJJ.style.color="#F0B7A7";
+    III.style.color="#F0B7A7";
+    leftPart.style.backgroundColor="#F0B7A7";
+    leftPart.style.color="white";
+    midPart.style.backgroundColor="#F0B7A7";
+    quickNotes.style.borderColor = "white";
+    changeButton.style.color="white";
+    changeDelete.style.color="white";
+    matterStyle.style.borderColor="#F0B7A7";
+    matterStyle2.style.borderColor="#F0B7A7";
+    matterStyle3.style.borderColor="#F0B7A7";
+    matterStyle4.style.borderColor="#F0B7A7";
+    matterStyle5.style.borderColor="#F0B7A7";
+    matterStyle6.style.borderColor="#F0B7A7s";
+} else if (t < 19){
+    JJJ.style.color="#AB6C82";
+    leftPart.style.backgroundColor="#AB6C82";
+    leftPart.style.color="white";
+    midPart.style.backgroundColor="#AB6C82";
+    quickNotes.style.borderColor = "white";
+    changeButton.style.color="white";
+    changeDelete.style.color="white";
+    matterStyle.style.borderColor="#AB6C82";
+    matterStyle2.style.borderColor="#AB6C82";
+    matterStyle3.style.borderColor="#AB6C82";
+    matterStyle4.style.borderColor="#AB6C82";
+    matterStyle5.style.borderColor="#AB6C82";
+    matterStyle6.style.borderColor="#AB6C82";
 } else if (t < 22){
     ////document.body.style.backgroundColor="#685d79";
     ///document.body.style.color="white";
     JJJ.style.color="#685d79";
+    III.style.color="#685d79";
     leftPart.style.backgroundColor="#685d79";
     leftPart.style.color="white";
     midPart.style.backgroundColor="#685d79";
@@ -68,10 +108,13 @@ if (t < 9) {
     matterStyle2.style.borderColor="#685d79";
     matterStyle3.style.borderColor="#685d79";
     matterStyle4.style.borderColor="#685d79";
+    matterStyle5.style.borderColor="#685d79";
+    matterStyle6.style.borderColor="#685d79";
 } else {
     ///document.body.style.backgroundColor="#475C7A";;
     ///document.body.style.color="white";
     JJJ.style.color="#475C7A";
+    III.style.color="#475C7A";
     leftPart.style.backgroundColor="#475C7A";
     leftPart.style.color="white";
     midPart.style.backgroundColor="#475C7A";
@@ -86,6 +129,23 @@ if (t < 9) {
     matterStyle6.style.borderColor="#475C7A";
 }
 
+function myFunction() {
+    var x = document.getElementById("infor");
+    if (x.style.display === "fixed") {
+      x.style.display = "fixed";
+    } else {
+      x.style.display = "none";
+    }
+  }
+let inforBar = document.getElementById("infor");
+
+function onFunction(){
+    if (inforBar.style.display === "none") {
+        inforBar.style.display = "block";
+      } else {
+        inforBar.style.display = "none";
+      }
+}
 ////add notes
 (function() {
 
@@ -172,7 +232,7 @@ function drawClock() {
     if (t < 9) {
     ctx.fillStyle = '#8FB9A8';
 } else if (t < 11) {
-    ctx.fillStyle = '#FEFAD4';
+    ctx.fillStyle = '#ffe7c2';
 } else if (t < 14) {
     ctx.fillStyle = '#FCD0BA';
 } else if (t < 17) {
@@ -274,7 +334,21 @@ let daysLeft = hoursLeft / 24;
 let element = document.getElementById("replaceMe");
 
 element.innerHTML = Math.ceil(daysLeft);
-
+if (t < 9) {
+    element.style.color = '#8FB9A8';
+} else if (t < 11) {
+    element.style.color= '#ffe7c2';
+} else if (t < 14) {
+    element.style.color= '#FCD0BA';
+} else if (t < 17) {
+    element.style.color= '#F0B7A7';
+} else if (t < 19) {
+    element.style.color= '#AB6C82';
+} else if (t < 22) {
+    element.style.color= '#685d79';
+} else {
+    element.style.color= '#475C7A';
+} 
 ///change placeholder color
 
 
@@ -300,7 +374,21 @@ let daysLeft2 = hoursLeft2 / 24;
 let element2 = document.getElementById("replaceMe2");
 
 element2.innerHTML = Math.ceil(daysLeft2);
-
+if (t < 9) {
+    element2.style.color = '#8FB9A8';
+} else if (t < 11) {
+    element2.style.color= '#ffe7c2';
+} else if (t < 14) {
+    element2.style.color= '#FCD0BA';
+} else if (t < 17) {
+    element2.style.color= '#F0B7A7';
+} else if (t < 19) {
+    element2.style.color= '#AB6C82';
+} else if (t < 22) {
+    element2.style.color= '#685d79';
+} else {
+    element2.style.color= '#475C7A';
+} 
 
 ///birthday///
 let birthday = new Date("Auguest 10, 2024 00:00:00");
@@ -324,7 +412,21 @@ let daysLeft3 = hoursLeft3 / 24;
 let element3 = document.getElementById("replaceMe3");
 
 element3.innerHTML = Math.ceil(daysLeft3);
-
+if (t < 9) {
+    element3.style.color = '#8FB9A8';
+} else if (t < 11) {
+    element3.style.color= '#ffe7c2';
+} else if (t < 14) {
+    element3.style.color= '#FCD0BA';
+} else if (t < 17) {
+    element3.style.color= '#F0B7A7';
+} else if (t < 19) {
+    element3.style.color= '#AB6C82';
+} else if (t < 22) {
+    element3.style.color= '#685d79';
+} else {
+    element3.style.color= '#475C7A';
+} 
 
 
 ///school///
@@ -349,7 +451,21 @@ let daysLeft4 = hoursLeft4 / 24;
 let element4 = document.getElementById("replaceMe4");
 
 element4.innerHTML = Math.ceil(daysLeft4);
-
+if (t < 9) {
+    element4.style.color = '#8FB9A8';
+} else if (t < 11) {
+    element4.style.color= '#ffe7c2';
+} else if (t < 14) {
+    element4.style.color= '#FCD0BA';
+} else if (t < 17) {
+    element4.style.color= '#F0B7A7';
+} else if (t < 19) {
+    element4.style.color= '#AB6C82';
+} else if (t < 22) {
+    element4.style.color= '#685d79';
+} else {
+    element4.style.color= '#475C7A';
+} 
 /////newyear
 
 ///school///
@@ -374,7 +490,21 @@ let daysLeft5 = hoursLeft5 / 24;
 let element5 = document.getElementById("replaceMe5");
 
 element5.innerHTML = Math.ceil(daysLeft5);
-
+if (t < 9) {
+    element5.style.color = '#8FB9A8';
+} else if (t < 11) {
+    element5.style.color= '#ffe7c2';
+} else if (t < 14) {
+    element5.style.color= '#FCD0BA';
+} else if (t < 17) {
+    element5.style.color= '#F0B7A7';
+} else if (t < 19) {
+    element5.style.color= '#AB6C82';
+} else if (t < 22) {
+    element5.style.color= '#685d79';
+} else {
+    element5.style.color= '#475C7A';
+} 
 
 
 
@@ -554,6 +684,21 @@ function updateCountdown() {
     // 更新页面上的倒计时显示
     let element = document.querySelector(".replaceMe");
     element.innerHTML = daysLeftRounded;
+    if (t < 9) {
+        element.style.color = '#8FB9A8';
+    } else if (t < 11) {
+        element.style.color= '#ffe7c2';
+    } else if (t < 14) {
+        element.style.color= '#FCD0BA';
+    } else if (t < 17) {
+        element.style.color= '#F0B7A7';
+    } else if (t < 19) {
+        element.style.color= '#AB6C82';
+    } else if (t < 22) {
+        element.style.color= '#685d79';
+    } else {
+        element.style.color= '#475C7A';
+    } 
 }
 
 // 页面加载时调用一次，以初始化倒计时显示
